@@ -1,1 +1,4 @@
-<linux-task *ngFor="let task of tasks" [task]="task"></linux-task>
+<linux-enter-task (outEnterTask="addTask($event)"></linux-enter-task>
+<div class="tasks">
+  <linux-task *ngFor="let task of tasks" [task]="task"></linux-task>
+</div>
