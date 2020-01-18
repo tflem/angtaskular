@@ -1,2 +1,5 @@
-<input type="checkbox" [checked]="task.done" />
+<linux-checkbox
+  [checked]="task.done"
+  (outCheck)="task.done = $event"
+></linux-checkbox>
 <div>{{ task.title }}</div>
